@@ -1,30 +1,31 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "estruturas.h"
+#include "entrada.h"
 
 triangulo* recebePontos(){
     int pontos = 0;
-    triangulo aux;
-    float valorX = 0;
-    float valorY = 0;
+    triangulo *aux;
+    double valorX = 0;
+    double valorY = 0;
 
     while(pontos < 3){
         printf("Insira a Coordenada X do ponto %d", pontos+1);
-        scanf("%f", &valorX);
+        scanf("%lf", &valorX);
 
         printf("Insira a Coordenada Y do ponto %d", pontos+1);
-        scanf("%f", &valorY);
+        scanf("%lf", &valorY);
 
-        //Essa condicional define em qual ponto os valore estão sendo colocados dentro do while.
+        //Essa condicional define em qual ponto os valores estão sendo colocados dentro do while.
         if(pontos == 0){
-            aux.a.posX = valorX;
-            aux.a.posY = valorY;
+            aux->a->posX = valorX;
+            aux->a->posY = valorY;
         }else if(pontos == 1){
-            aux.b.posX = valorX;
-            aux.b.posY = valorY;
+            aux->b->posX = valorX;
+            aux->b->posY = valorY;
         }else{
-            aux.c.posX = valorX;
-            aux.c.posY = valorY;
+            aux->c->posX = valorX;
+            aux->c->posY = valorY;
         }
         pontos++;
     }
