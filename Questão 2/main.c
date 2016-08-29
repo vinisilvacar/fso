@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "leitura.c"
-#include "ordenacao.c"
+#include "leitura.h"
+#include "ordenacao.h"
 
 int main(){
 
@@ -35,6 +35,6 @@ int main(){
     };
 
     imprimeVetor(vetor, tamanho);
-    
+
     return 0;
 }

@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "ordenacao.h"
 
 void ordenaVetorCrescente(int *vetor, int tamanho){
     int i = 0;
