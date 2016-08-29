@@ -1,4 +1,7 @@
-#include "estruturas.h"
+#ifndef OPERACOES_H
+#define OPERACOES_H
+
+include "estruturas.h"
 
 //Recebe qual lado deseja calcular e retorna o valor desse lado do triângulo.
 double calculaTamanhoLado(triangulo *triangulo, int opcao);
@@ -11,3 +14,5 @@ double calculaPerimetro(double ladoAB, double ladoBC, double ladoCA);
 
 //Calcula área do triângulo.
 double calculaArea(double ladoAB, double ladoBC, double ladoCA);
+
+#endif

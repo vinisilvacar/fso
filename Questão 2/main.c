@@ -16,13 +16,6 @@ int main(){
 
     opcao = defineOrdenacao();
 
-    // if(opcao == 'd'){
-    //     ordenaVetorCrescente(vetor, tamanho);
-    // }else{
-    //     ordenaVetorDecrescente(vetor, tamanho);
-    // }
-
-
     switch(opcao){
         case 'd':
             ordenaVetorCrescente(vetor, tamanho);
