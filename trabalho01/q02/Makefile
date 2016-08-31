@@ -1,5 +1,5 @@
 BINFOLDER =bin/
-INCFOLDER = inc/
+INCFOLDER = include/
 SRCFOLDER = src/
 OBJFOLDER = obj/
 
@@ -15,4 +15,3 @@ $(OBJFOLDER)%.o: src/%.c
 clean:
 	rm -rf $(OBJFOLDER)*
 	rm -rf $(BINFOLDER)*
-	

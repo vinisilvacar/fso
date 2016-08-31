@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-
 #include "estruturas.h"
 #include "operacoes.h"
 
@@ -10,17 +9,14 @@ double calculaTamanhoLado(triangulo *triangulo, int opcao){
     double medidaLado = 0;
 
     switch(opcao){
-        //Distancia entre AB
         case 1:
-            medidaLado = sqrt(pow(triangulo.a.x - triangulo.b.x,2) + pow(triangulo.a.y - triangulo.b.y ,2));
+            medidaLado = sqrt(pow(triangulo->a->posX - triangulo->b->posX,2) + pow(triangulo->a->posY - triangulo->b->posY ,2));
             break;
-        //Distância entre BC
         case 2:
-            medidaLado = sqrt(pow(triangulo.b.x - triangulo.c.x,2) + pow(triangulo.b.y - triangulo.c.y ,2));
+            medidaLado = sqrt(pow(triangulo->b->posX - triangulo->c->posX,2) + pow(triangulo->b->posY - triangulo->c->posY ,2));
             break;
-        //Distância entre CA
         case 3:
-            medidaLado = sqrt(pow(triangulo.c.x - triangulo.a.x,2) + pow(triangulo.c.y - triangulo.a.y ,2));
+            medidaLado = sqrt(pow(triangulo->c->posX - triangulo->a->posX,2) + pow(triangulo->c->posY - triangulo->a->posY ,2));
             break;
         default:
             printf("Opção inválida !");
@@ -30,7 +26,6 @@ double calculaTamanhoLado(triangulo *triangulo, int opcao){
 
 }
 
-//Retorna 1 se é possível existir o triangulo, e 0 se não for possível.
 int calculaCondicaoExistencia(double ladoAB, double ladoBC, double ladoCA){
     int resposta = 0;
 

@@ -1,9 +1,9 @@
 NAME = triangulo
 
-SRC_DIR = src
-INC_DIR = include
-OBJ_DIR = obj
 BIN_DIR = bin
+INC_DIR = include
+SRC_DIR = src
+OBJ_DIR = obj/
 
 TARGET = $(BIN_DIR)/$(NAME)
 
@@ -18,13 +18,14 @@ OBJ = ${addprefix $(OBJ_DIR)/, ${notdir ${SRC:.c=.o}}}
 
 .PHONY: clean depend dist-clean
 
-all:
-	@mkdir -p $(OBJ_DIR) $(BIN_DIR)
-	$(MAKE) $(TARGET)
+all: $(SRC:$(SRC_DIR)%.c=$(OBJ_DIR)%.o)
+	$(CC) $(CFLAGS) $(OBJ_DIR)*.o -lm -o$(BIN_DIR)exec
+	# @mkdir -p $(OBJ_DIR) $(BIN_DIR)
+	#$(MAKE) $(TARGET)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@echo Building $@
-	$(CC) -c $(CFLAGS) $< -o $@
+	$(CC) -c $(CFLAGS) $< -o $@ -I./$(INC_DIR)
 
 $(TARGET): $(OBJ)
 	@echo Building $@

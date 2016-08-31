@@ -3,7 +3,7 @@
 #include "entrada.h"
 #include "operacoes.h"
 
-int main(void) {
+int main() {
 
     triangulo *triangulo;
     double ladoAB = 0, ladoBC = 0, ladoCA = 0;
