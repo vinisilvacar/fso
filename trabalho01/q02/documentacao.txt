@@ -1,0 +1,61 @@
+Fundamentos de Sistemas Operacionais - FSO/FGA
+Trabalho 1
+Introdução a Sistemas Operacionais
+
+Alunos: 
+	Caio Felipe Dias Nunes- 14/0133305
+	Vinícius da Silva Carvalho - 13/0018431
+
+* Sistema Operacional Utilizado na construção do sistema
+
+Ubuntu Linux - x86_64 Kernel 3.19.0-64-generic
+Linux Elementary OS Freya - x86_64 Kernel 3.19.0-66-generic
+
+* Ambiente de Desenvolvimento
+
+Sistema realizado em computadores pessoais com utilização de Ferramentas do Sistema Operacional Linux (compilador GCC, depurador), conceito de makefile, controle de versão Git e editor de texto Gedit.
+
+* Instruções
+
+** Compilação
+
+Para compilar, basta digitar no console o comando, logo após pressionar enter:
+ $ make
+
+Para remover os arquivos temporários e os executáveis, digite no console:
+ $ make clean
+
+** Utilização
+
+Para utilizar o programa, o usuário deverá entrar na pasta bin:
+$ cd bin
+
+Inserir o nome do executável gerado no console:
+$ ./exec
+
+Ao iniciar o programa selecione quantos números inteiros deseja armazenar;
+Insira os números inteiros;
+Digite 1 se deseja escolher a ordenação (crescente ou decrescente) ou digite qualquer tecla para Ordenação em ordem crescente;
+Caso queira escolher a ordenação, digite 'd' para ordenação crescente ou 'r' para decrescente;
+O programa então irá apresentar o array de números inteiros com a ordenação solicitada.
+
+** Caso de Teste Válido
+
+Um caso de teste válido para o programa seria, executar o passo a passo descrito com os seguintes comandos:
+$ ./exec
+1. Quantos números deseja armazenar? 3
+2. Insira o valor da posição 1: 8
+3. Insira o valor da posição 2: 2
+4. Insira o valor da posição 3: 5
+5. Digite 1 caso queira definir uma opção de ordenação: 1
+6. Digite 'd' para ordenação crescente ou 'r' para ordenação decrescente: d
+7. Resposta: 258
+
+A execução desses 7 passos podem ser realizadas com sucesso. Outros casos de teste válidos seguindo a ordem dos passos:
+ - 8, 20, 50, 89, 34, 65, 21, 2, 9, 1, r  => 89,65,50,34,21,20,9,2
+ 
+
+** Limitações conhecidas
+
+O programa não trabalha com verificações de entrada de dados e nem tratamento de erros. Dessa forma, caso o usuário digite um comando não esperado, o programa não saberá qual comportamento seguir, podendo ocasionar no fechamento do programa.
+
