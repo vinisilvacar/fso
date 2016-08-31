@@ -25,6 +25,7 @@ int main(){
             break;
         default:
             printf("\nOpção de ordenação não existente !\n");
+            printf("\nSerá ordenado por ordem crescente !\n");
     };
 
     imprimeVetor(vetor, tamanho);
