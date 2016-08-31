@@ -13,7 +13,7 @@ Linux Elementary OS Freya - x86_64 Kernel 3.19.0-66-generic
 
 * Ambiente de Desenvolvimento
 
-Sistema realizado em computadores pessoais com utilização de Ferramentas do Sistema Operacional Linux (compilador GCC, depurador), conceito de makefile, controle de versão Git e editor de texto Gedit.
+Sistema realizado em computadores pessoais com utilização de Ferramentas do Sistema Operacional Linux (compilador GCC, depurador), conceito de makefile, controle de versão Git e editor de texto Gedit e Atom.
 
 * Instruções
 
