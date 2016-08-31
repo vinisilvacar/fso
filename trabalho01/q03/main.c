@@ -10,7 +10,7 @@ int main(){
     //Carrega o endereço da variável number1 no ponteiro dPtr.
     dPtr = &number1;
 
-    //Imprime na tela o endereço da variável apartir do ponteiro.
+    //Imprime na tela o valor da variável apontada por dPtr partindo do ponteiro. 
     printf("Valor de number1: %lf\n", *dPtr);
 
     //Carrega o valor da variável apontada por dPtr na variável number2.
@@ -20,12 +20,13 @@ int main(){
     printf("Valor de number2: %lf\n", number2);
 
     //Imprime o endereço de number1.
-    printf("Endereço de number1: %p\n", &number1);
+    printf("Endereco de number1: %p\n", &number1);
 
     //Imprime endereço armazenado em dPtr.
-    printf("Endereço armazendo em dPtr: %p\n", dPtr);
+    printf("Endereco armazendo em dPtr: %p\n", dPtr);
 
     //Resposta: Os valores impressos do endereço de number1 e do endereço armazenado em dPtr são iguais, pois é justamente o endereço de number1 que está armazenado em dPtr.
+    printf("\nOs valores impressos do endereco de number1 e do endereco armazenado em dPtr são iguais, pois e justamente o endereço de number1 que esta armazenado em dPtr.\n\n");
 
     printf("Insira uma string qualquer: ");
     scanf("%s", s1);
@@ -47,7 +48,7 @@ int main(){
 
     printf("As strings concatenadas: %s\n", s1);
 
-    //Determinando comprimento da string s1
-    printf("O comprimento da string é: %d\n", strlen(s1));
+    //Determinando comprimento da string s1.
+    printf("O comprimento da string s1 é: %d\n", (int)strlen(s1));
 
 }
