@@ -1,1 +1,1 @@
-obj/entrada.o: src/entrada.c include/estruturas.h
+obj//entrada.o: src/entrada.c include/estruturas.h

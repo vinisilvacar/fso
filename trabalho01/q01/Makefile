@@ -1,6 +1,6 @@
 NAME = triangulo
 
-BIN_DIR = bin
+BIN_DIR = bin/
 INC_DIR = include
 SRC_DIR = src
 OBJ_DIR = obj/
@@ -9,7 +9,7 @@ TARGET = $(BIN_DIR)/$(NAME)
 
 CC = gcc
 
-CFLAGS = -W -Wall -pedantic -MMD -g3
+CFLAGS = -std=c99 -W -Wall -pedantic -MMD -g3
 #INCLUDES = -Iinclude -I/usr/local/include/ijengine -Itest `sdl2-config --cflags`
 #LIBS = -lijengine `sdl2-config --libs` -lSDL2_image -lSDL2_ttf -lSDL2_mixer
 
@@ -19,8 +19,8 @@ OBJ = ${addprefix $(OBJ_DIR)/, ${notdir ${SRC:.c=.o}}}
 .PHONY: clean depend dist-clean
 
 all: $(SRC:$(SRC_DIR)%.c=$(OBJ_DIR)%.o)
-	$(CC) $(CFLAGS) $(OBJ_DIR)*.o -lm -o$(BIN_DIR)exec
 	# @mkdir -p $(OBJ_DIR) $(BIN_DIR)
+	$(CC) $(CFLAGS) $(OBJ_DIR)*.o -lm -o$(BIN_DIR)exec
 	#$(MAKE) $(TARGET)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
