@@ -2,31 +2,36 @@
 #include <stdio.h>
 #include "estruturas.h"
 
-triangulo* recebePontos(){
+triangulo recebePontos(){
     int pontos = 0;
-    triangulo *aux;
-    aux = (triangulo*) malloc(sizeof(triangulo));
-    double valorX = 0;
+    triangulo aux;
+    // aux = (triangulo*) malloc(sizeof(triangulo));
     // double valueY = 0;
 
-    while(pontos < 3){
+        // double valorX = 0;
 
-        printf("Insira a Coordenada X do ponto %d :", pontos+1);
-        scanf("%lf", &valorX);
+    printf("Insira a Coordenada X do ponto %d :", pontos+1);
+    scanf("%lf", &(aux.a->posX));
 
-        if(pontos == 0){
-            aux->a->posX = valorX;
-            // aux->a->posY = valueY;
-        }else if(pontos == 1){
-            aux->b->posX = valorX;
-            // aux->b->posY = valueY;
-        }else{
-            aux->c->posX = valorX;
-            // aux->c->posY = valueY;
-        }
-        pontos++;
+    printf("Insira a Coordenada Y do ponto %d :", pontos+1);
+    scanf("%lf", &(aux.a->posY));
 
-    }
+    pontos++;
+
+    printf("Insira a Coordenada X do ponto %d :", pontos+1);
+    scanf("%lf", &(aux.b->posX));
+
+    printf("Insira a Coordenada Y do ponto %d :", pontos+1);
+    scanf("%lf", &(aux.b->posY));
+
+    pontos++;
+
+    printf("Insira a Coordenada X do ponto %d :", pontos+1);
+    scanf("%lf", &(aux.c->posX));
+
+    printf("Insira a Coordenada Y do ponto %d :", pontos+1);
+    scanf("%lf", &(aux.c->posY));
+
 
     return aux;
 }

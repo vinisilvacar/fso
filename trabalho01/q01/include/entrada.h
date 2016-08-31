@@ -2,6 +2,6 @@
 #define ENTRADA_H
 #include "estruturas.h"
 
-triangulo* recebePontos();
+triangulo recebePontos();
 
 #endif
