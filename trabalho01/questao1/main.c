@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include "entrada.h"
 #include "operacoes.h"
+#include "estrutura.h"
 
 int main() {
 
-    triangulo *triangulo;
+    Triangulo triangulo;
     double ladoAB = 0, ladoBC = 0, ladoCA = 0;
 
     triangulo = recebePontos();
@@ -21,7 +22,7 @@ int main() {
         printf("O perimetro do triângulo é:%lf\n", calculaPerimetro(ladoAB, ladoBC, ladoCA));
         printf("A área do triângulo é: %lf\n", calculaArea(ladoAB, ladoBC, ladoCA));
     }else{
-        printf("Os lados não atendem a condição de existência de um triângulo!\n");
+        printf("Os lados não atendem a condição de existencia de um triangulo!\n");
     }
 
     return 0;

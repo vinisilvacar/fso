@@ -1,10 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <stdbool.h>
+
 #include "estruturas.h"
 #include "operacoes.h"
 
-double calculaTamanhoLado(triangulo *triangulo, int opcao){
+double calculaTamanhoLado(Triangulo triangulo, int opcao){
 
     double medidaLado = 0;
 

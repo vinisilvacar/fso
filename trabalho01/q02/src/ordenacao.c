@@ -41,7 +41,7 @@ void imprimeVetor(int *vetor, int tamanho){
     int cont = 0;
 
     while(cont<tamanho){
-        printf("%d", vetor[cont]);
+        printf(" %d ---", vetor[cont]);
         cont++;
     }
 

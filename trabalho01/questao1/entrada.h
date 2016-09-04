@@ -2,7 +2,8 @@
 #define ENTRADA_H
 
 #include "estruturas.h"
+
 //Recebe os pontos do usuário para montar o triângulo.
-triangulo* recebePontos();
+Triangulo recebePontos();
 
 #endif

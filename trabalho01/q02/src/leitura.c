@@ -24,7 +24,7 @@ void insereValores(int *vetor, int tamanho){
 
 char defineOrdenacao(){
     int opcaoAux = 0;
-    char ordenacao;
+    char ordenacao = 'd';
 
     printf("Digite 1 caso queira definir uma opção de ordenação ?");
     scanf("%d", &opcaoAux);

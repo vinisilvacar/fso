@@ -1,0 +1,45 @@
+Fundamentos de Sistemas Operacionais - FSO/FGA
+Trabalho 1
+Introdução a Sistemas Operacionais
+
+Alunos: 
+	Caio Felipe Dias Nunes- 14/0133305
+	Vinícius da Silva Carvalho - 13/0018431
+
+* Sistema Operacional Utilizado na construção do sistema
+
+Ubuntu Linux - x86_64 Kernel 3.19.0-64-generic
+Linux Elementary OS Freya - x86_64 Kernel 3.19.0-66-generic
+
+* Ambiente de Desenvolvimento
+
+Sistema realizado em computadores pessoais com utilização de Ferramentas do Sistema Operacional Linux (compilador GCC, depurador), conceito de makefile, controle de versão Git e editor de texto Gedit e Atom.
+
+* Instruções
+
+** Compilação
+
+Para compilar, basta digitar no console o comando:
+ $ gcc -o prog main.c
+
+** Utilização
+
+Para utilizar o programa, o usuário deverá rodar o arquivo executável no console:
+$ ./prog
+
+Ao iniciar o programa os valores armazenados no código, solicitados pelo eneunciado, serão apresentados.
+Em tempo de execução será solicitada a inserção de uma string mediante solictação do programa.
+O programa então, irá apresentar as soluções solicitadas pelo enunciado.
+
+** Caso de Teste Válido
+
+Um caso de teste válido para o programa seria, executar o passo a passo descrito com os seguintes comandos:
+$ ./prog
+1. Insira uma string qualquer: solucoes;
+Nessa parte deverá inserir uma string qualquer para ser analisada, como caso de teste foram utilizadas as strings:
+solucao {'fga', 'string', 'sistemas', '555-0000'}
+
+** Limitações conhecidas
+
+O programa não trabalha com verificações de entrada de dados e nem tratamento de erros, porém a única entrada em tempo de execução é de uma string, o que permite qualquer caracter. Como a leitura é de apenas uma string, strings compostas não podem ser interpretadas pelo programa, por exemplo, ao digitar 'sistemas operacionais', o programa guardará apenas a informação referente a primeira palavra 'sistemas'.
+
