@@ -8,7 +8,7 @@ int matriz_a[3][2];
 int matriz_b[2][3];
 int matriz_produto[3][3];
 
-void *multiplica(int value);
+void *multiplica(void* value);
 
 int main(){
 
@@ -20,22 +20,22 @@ int main(){
 
     for(i=0; i<9; i ++){
         pthread_create(&threads[i], NULL, multiplica, (void*)i);
-        // multiplica(matriz_produto, matriz_a, matriz_b, i);
     }
-
-    multiplica(i);
 
     for(i = 0; i < 9; i++)
         pthread_join(threads[i], NULL);
+
+        // multiplica(i);
 
         printMatriz(matriz_produto);
 
     return 0;
 }
 
-void *multiplica(int value){
+void * multiplica(void *value){
+    int valor = (int) value;
 
-    switch(value){
+    switch(valor){
         case 0:
             matriz_produto[0][0] = (matriz_a[0][0] * matriz_b[0][0]) + (matriz_a[0][1] * matriz_b[1][0]);
             break;
