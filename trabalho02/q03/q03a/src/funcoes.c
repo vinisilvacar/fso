@@ -8,7 +8,7 @@ void leInteirosA(int matriz[3][2]){
 
     for(i = 0; i < 3; i ++){
         for(j=0; j< 2; j++){
-            printf("Insira o número na linha %d e coluna %d : ", i, j);
+            printf("Insira o número na linha %d e coluna %d da matriz 1: ", (i+1), (j+1));
             scanf("%d", &aux);
             matriz[i][j] = aux;
         }
@@ -21,7 +21,7 @@ void leInteirosB(int matriz[2][3]){
 
     for(i = 0; i < 2; i ++){
         for(j=0; j< 3; j++){
-            printf("Insira o número na linha %d e coluna %d : ", i, j);
+            printf("Insira o número na linha %d e coluna %d da matriz 2: ", (i+1), (j+1));
             scanf("%d", &aux);
             matriz[i][j] = aux;
         }
