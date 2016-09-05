@@ -1,0 +1,41 @@
+Fundamentos de Sistemas Operacionais - FSO/FGA
+Trabalho 2
+Introdução a Sistemas Operacionais
+
+Alunos:
+	Caio Felipe Dias Nunes- 14/0133305
+	Vinícius da Silva Carvalho - 13/0018431
+
+----- Sistema Operacional Utilizado na construção do sistema
+
+Ubuntu Linux - x86_64 Kernel 3.19.0-64-generic
+Linux Elementary OS Freya - x86_64 Kernel 3.19.0-66-generic
+
+----- Ambiente de Desenvolvimento
+
+Sistema realizado em computadores pessoais com utilização de Ferramentas do Sistema Operacional Linux (compilador GCC, depurador), conceito de makefile, controle de versão Git e editor de texto Gedit e Atom.
+
+----- Instruções
+
+** Compilação
+
+Para compilar, basta digitar no console o comando, logo após pressionar enter:
+ $ make
+
+Para remover os arquivos temporários e os executáveis, digite no console:
+ $ make clean
+
+** Utilização
+
+Para utilizar o programa, o usuário deverá entrar na pasta bin:
+$ cd bin
+
+Inserir o nome do executável gerado no console:
+$ ./exec
+
+Ao iniciar o programa é possível pelas mensagens apresentadas na tela as operações realizadas pelo programa.
+
+
+----- Limitações conhecidas
+
+
