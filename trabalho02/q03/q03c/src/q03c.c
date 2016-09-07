@@ -8,11 +8,7 @@ int matriz_a[3][2];
 int matriz_b[2][3];
 int matriz_produto[3][3];
 
-typedef struct param_thread{
-    int i ;
-}param_thread;
-
-void *multiplica(void* value);
+void *multiplica(int value);
 
 int main(){
 
@@ -22,27 +18,32 @@ int main(){
     leInteirosA(matriz_a);
     leInteirosB(matriz_b);
 
-    param_thread *i_param = NULL;
+    for(i=0; i<4; i ++){
+        pthread_create(&threads[i], NULL, multiplica, i);
 
-    for(i=0; i<9; i ++){
-        i_param = (param_thread *) malloc(sizeof(param_thread));
-        i_param->i = i;
-        pthread_create(&threads[i], NULL, multiplica, (void*)i_param);
     }
+
+    for(i=4; i<8; i ++){
+        pthread_create(&threads[i], NULL, multiplica, i);
+    }
+
+    for(i=8; i<9; i ++){
+        pthread_create(&threads[i], NULL, multiplica, i);
+    }
+
+    multiplica(i);
 
     for(i = 0; i < 9; i++)
         pthread_join(threads[i], NULL);
 
-
         printMatriz(matriz_produto);
-        pthread_exit(0);
+
+    return 0;
 }
 
-void * multiplica(void *value){
+void *multiplica(int value){
 
-    param_thread *i_param = (param_thread *) value;
-
-    switch(i_param->i){
+    switch(value){
         case 0:
             matriz_produto[0][0] = (matriz_a[0][0] * matriz_b[0][0]) + (matriz_a[0][1] * matriz_b[1][0]);
             break;
