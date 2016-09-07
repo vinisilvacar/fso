@@ -22,7 +22,7 @@ int main() {
 
     //SIGALRM - Manda o sinal de alarme a um processo.
     //Associa a notificação ao SIGALRM
-    signal(SIGALRM,notification);
+    signal(SIGALRM, notification);
 
     //O pid_t é um tipo de dados do tipo inteiro que é capaz de representar um ID de processo.
     pid_t child_pid;
