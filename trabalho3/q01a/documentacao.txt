@@ -1,0 +1,70 @@
+Universidade de Brasilia - UnB
+Faculdade do Gama - FGA
+
+Fundamentos de Sistemas Operacionais - FSO
+Trabalho 3
+
+Bibliotecas
+
+Alunos:
+	Caio Felipe Dias Nunes- 14/0133305
+	Vinicius da Silva Carvalho - 13/0018431
+
+
+* Sistemas Operacionais utilizados na construcao do sistema
+
+-- Ubuntu Linux - x86_64 Kernel 3.19.0-64-generic
+-- Linux Elementary OS Freya - x86_64 Kernel 3.19.0-66-generic
+
+
+* Ambiente de Desenvolvimento
+
+Sistema realizado em computadores pessoais com utilizacao de Ferramentas do Sistema Operacional Linux (compilador GCC, depurador), controle de versao Git e editor de texto Gedit e Atom.
+
+* Instrucoes
+
+** Compilacao
+
+Para compilar, basta digitar no console o comando, logo após pressionar enter:
+ $ make
+
+Para remover os arquivos temporários e os executáveis, digite no console:
+ $ make clean
+
+** Utilização
+
+Para utilizar o programa, o usuário deverá entrar na pasta bin:
+$ cd bin
+
+Inserir o nome do executável gerado no console:
+$ ./exec
+
+Ao iniciar o programa insira os números inteiros de cada posição da matriz 1;
+Insira os números inteiros de cada posição da matriz 2;
+O programa então irá apresentar a matriz de números inteiros resultante da multiplicação da matriz 1 e 2.
+
+
+** Caso de Teste Válido
+Um caso de teste válido para o programa seria, executar o passo a passo descrito com os seguintes comandos:
+$ ./exec
+1. Insira o número na linha 0 e coluna 0 : 1
+2. Insira o número na linha 0 e coluna 1 : 2
+3. Insira o número na linha 1 e coluna 0 : 3
+4. Insira o número na linha 1 e coluna 1 : 4
+5. Insira o número na linha 2 e coluna 0 : 5
+6. Insira o número na linha 2 e coluna 1 : 6
+7. Insira o número na linha 0 e coluna 0 : 1
+8. Insira o número na linha 0 e coluna 1 : 2
+9. Insira o número na linha 0 e coluna 2 : 3
+10. Insira o número na linha 1 e coluna 0 : 4
+11. Insira o número na linha 1 e coluna 1 : 5
+12.  Insira o número na linha 1 e coluna 2 : 6
+13.  Resposta : 9	12	15
+			   19	26	33
+			   29	40	51
+
+
+** Limitações conhecidas
+
+O programa não trabalha com verificações de entrada de dados e nem tratamento de erros. Dessa forma, caso o usuário digite um comando não esperado, o programa não saberá qual comportamento seguir, podendo ocasionar no fechamento do programa.
+O programa se resume a trabalhar com a multiplicação de uma matriz de dimensões 3x2 por uma matriz de dimensões 2x3. Assim, se o usuário desejar uma matriz de dimensões diferentes, não poderá utilizar o programa.
