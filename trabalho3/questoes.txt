@@ -1,0 +1,7 @@
+Questões:
+? Em relação ao programa que contempla os itens a) e b), quais foram as alterações
+de códigos-fonte necessárias para a solução (se houverem)?
+
+
+? Dados os conhecimentos adquiridos em função desse trabalho, indique vantagens
+e problemas decorrentes da utilização de bibliotecas dinâmicas.
