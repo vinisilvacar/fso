@@ -43,6 +43,5 @@ int testa_primo(int primo){
      divisor++;
     }
   }
-  
     return divisor;
 }
