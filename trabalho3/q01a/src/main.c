@@ -16,9 +16,9 @@ int main() {
 
     int result_primo = gera_primo();
     if (testa_primo(result_primo) == 2)
-      printf("\nO número não é primo!\n");
-    else
       printf("\nO número é primo!\n");
+    else
+      printf("\nO número não é primo!\n");
 
     return 0;
 }
