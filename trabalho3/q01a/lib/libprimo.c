@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <time.h>
+#include <math.h>
 #include "libprimo.h"
 
 // void libprimo(char *str){
@@ -22,7 +23,8 @@ int gera_primo(){
 
 	int prime;
 
-	srand((unsigned) time(NULL));
+	time_t t;
+	srand((unsigned) time(&t));
 
 	do{
 		prime = rand();
@@ -35,8 +37,6 @@ int testa_primo(int primo){
 
     int divisor = 0;
     int i = 0;
-
-    x = gera_primo();
 
   for (i = 1; i <= primo; i++) {
     if (primo % i == 0) {
