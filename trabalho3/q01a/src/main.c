@@ -8,25 +8,16 @@
  *
  * Licença: GPL 3.0
 */
-
 #include "libprimo.h"
+#include <stdlib.h>
+#include <stdio.h>
 
-int main(int argc, char *argv[]) 
-{ 
-    int num; 
-    if (argc != 2) 
-       { 
-          printf("Forneca um numero\n"); 
-          return 1; 
-       } 
-    else 
-       num = atoi(argv[1]); 
+int main() {
 
-    printf("\n*** fatorial\n"); 
-    int fat = fatorial(num); 
-    printf("Fatorial de %d = %d\n", num, fat); 
+    if (testa_primo(gera_primo()) == 2)
+      printf("O número é primo!\n");
+    else
+      printf("O número não é primo!\n");
 
-    printf("\n'*** fibonacci\n"); 
-    int fib = fibonacci(num); 
-    printf("Soma dos %d primeiros numeros de Fibonacci = %d\n\n", num, fib); 
+    return 0;
 }

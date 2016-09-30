@@ -10,9 +10,39 @@
 */
 
 #include <stdio.h>
+#include <time.h>
 #include "libprimo.h"
 
-void libprimo(char *str){
-        printf("My Print: %s\n", str);
-        return;
+// void libprimo(char *str){
+//         printf("My Print: %s\n", str);
+//         return;
+// }
+
+int gera_primo(){
+
+	int prime;
+
+	srand((unsigned) time(NULL));
+
+	do{
+		prime = rand();
+	}while(!testa_primo(prime));
+
+	return prime;
+}
+
+int testa_primo(int primo){
+
+    int divisor = 0;
+    int i = 0;
+
+    x = gera_primo();
+
+  for (i = 1; i <= primo; i++) {
+    if (primo % i == 0) {
+     divisor++;
+    }
+  }
+  
+    return divisor;
 }

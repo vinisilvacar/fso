@@ -8,7 +8,6 @@
  *
  * Licença: GPL 3.0
 */
-
 #ifndef _LIBPRIMO_H
 #define _LIBPRIMO_H
 
@@ -19,4 +18,3 @@ int gera_primo();
 int testa_primo(int primo);
 
 #endif
-
