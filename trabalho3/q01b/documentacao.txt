@@ -1,0 +1,44 @@
+Universidade de Brasilia - UnB
+Faculdade do Gama - FGA
+
+Fundamentos de Sistemas Operacionais - FSO
+Trabalho 3
+
+Bibliotecas
+
+Alunos:
+	Caio Felipe Dias Nunes- 14/0133305
+	Vinicius da Silva Carvalho - 13/0018431
+
+
+* Sistemas Operacionais utilizados na construcao do sistema
+
+-- Ubuntu Linux - x86_64 Kernel 3.19.0-64-generic
+-- Linux Elementary OS Freya - x86_64 Kernel 3.19.0-66-generic
+
+
+* Ambiente de Desenvolvimento
+
+Sistema realizado em computadores pessoais com utilizacao de Ferramentas do Sistema Operacional Linux (compilador GCC, depurador), controle de versao Git e editor de texto Gedit e Atom.
+
+* Instrucoes
+
+** Compilacao
+
+Para compilar, basta digitar no console o comando, logo após pressionar enter:
+ $ make
+
+Para remover os arquivos temporários e os executáveis, digite no console:
+ $ make clean
+
+** Utilização
+
+Para utilizar o programa, o usuário deverá entrar na pasta bin:
+$ cd bin
+
+Inserir o nome do executável gerado no console:
+$ ./exec
+
+Ao iniciar o programa serão gerados números aleatórios através da função gera_primo, e serão testados pela função testa_primo.
+
+** Limitações conhecidas
